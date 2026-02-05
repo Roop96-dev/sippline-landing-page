@@ -11,7 +11,7 @@ The focus is on layout design, typography, and visual presentation.
 - CSS3
 
 ## Live Demo
-🔗 https://your-netlify-link.netlify.app
+🔗 spectacular-nougat-47f504.netlify.app
 
 ## What I’m Learning / Improving
 - Responsive layout
