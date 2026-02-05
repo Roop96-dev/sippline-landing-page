@@ -1,0 +1,129 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #f96d3c, #f8a07a);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.buy-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 80px;
+}
+
+/* Main right design box */
+.right-design {
+  position: relative;
+  width: 280px;
+  height: 380px;
+}
+
+/* Diamond image */
+.right-design img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+  position: relative;
+  z-index: 2;
+}
+
+/* White diagonal strips (background decoration) */
+.right-design::before,
+.right-design::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 70px;
+  background: white;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+/* Top strip */
+.right-design::before {
+  top: -20px;
+  right: -120px;
+}
+
+/* Bottom strip */
+.right-design::after {
+  bottom: -20px;
+  right: -120px;
+}
